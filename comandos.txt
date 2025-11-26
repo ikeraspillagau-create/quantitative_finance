@@ -1,0 +1,24 @@
+# crear ambiente virtual
+
+## windows
+
+python -m venv .venv
+
+#== activar ambiente virtual ===
+
+# === instalar librerias ==
+
+#windows (yo)
+pip install -r requirements.txt
+
+# === COMANDOS EN GITHUB ===
+git status
+
+# Guardar cambios
+git add
+
+# Comentar cambios
+git commit -m "comentario que deseamos escribir"
+
+# Actualizar branch
+git push origin main
