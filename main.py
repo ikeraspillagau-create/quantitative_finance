@@ -20,3 +20,7 @@ if __name__ == '__main__':
     sigma = portfolio_volatility(df=df, vector_w=vector_w)
     print(sigma)
     
+    # Value at Risk (VaR)
+    confidence = 0.05
+    var = VaR(sigma=sigma,confidence=confidence)
+    print(var)

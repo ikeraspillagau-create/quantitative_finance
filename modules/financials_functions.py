@@ -75,6 +75,21 @@ def portfolio_returns(
     df_pivot = df_pivot.pct_change().dropna()
     
     return df_pivot
+def VaR(sigma:float, confidence: float) -> float:
+    '''
+    Cálculo del Value at Risk al nivel de confianza indicado. 
+    Con supuesto de media cero.
+    '''
+
+    # Estadistico Z al nivel de confianza
+    z_score = stats.norm.ppf(confidence) 
+
+    # VaR
+    var = sigma * z_score
+
+    return var
+
+ 
     
     
     
